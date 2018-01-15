@@ -1,9 +1,8 @@
 function reset() {
-    for (var i=2; i<=52; i++){
+    for (var i=2; i<=55; i++){
         document.getElementById(i +'').disabled=false;
         document.getElementById(i +'').style.display="none";
     }
-    
     document.getElementById('1').disabled=false;
 }
 
