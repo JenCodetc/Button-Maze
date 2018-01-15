@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Button Maze</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <style>
+        html{
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        div.center {
+            margin: 15vw;
+            margin: 15vh;
+            margin-left: 30vw;
+            margin-right: 30vw;
+        }
+        
+        h1{
+            font-size: 8vh;
+        }
+        
+        button {
+            display: none;
+            margin-top: 3vh;
+            margin-top: 2vh;
+            border-radius: 2px;
+            font-size: 3vh;
+            height: 5vh;
+            left: 50%;
+            right: 50%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <h1 id="title">Welcome!</h1>        
+        
+        <button type="button" style="display:inline-block;" onclick="one()">Start the Maze</button>
+        
+        <button type="button" style="display:inline-block;" onclick="reset()">Reset</button>
+        
+<!--        <p>This is your <span id="displayCount">1</span>st/nd/rd/th try</p>-->
+        
+        <br>
+
+        <button type="button" id="2" onclick="two()">
+            To the Left</button>
+
+        <button type="button" id="3" onclick="three()">
+            To the Right</button>
+        
+        <br>
+
+        <button type="button" id="4">
+            Dead End</button>
+
+        <button type="button" id="5" onclick="five()">
+            Down Left</button>
+        
+        <button type="button" id="6" onclick="six()">
+            Down Right</button>
+        
+        <br>
+        
+        <button type="button" id="7" onclick="seven()">
+            This way</button>
+        
+        <button type="button" id="8" onclick="eight()">
+            That way</button>
+        
+        <button type="button" id="9" onclick="nine()">
+            Over here</button>
+        
+        <button type="button" id="10" onclick="ten()">
+            Click me</button>
+        
+        <br>
+        
+        <button type="button" id="11" onclick="eleven()">
+            Fromage</button>
+        
+        <button type="button" id="12" onclick="twelve()">
+            Grasshopper</button>
+        
+        <button type="button" id="13" onclick="thirteen()">
+            Shampoo</button>
+        
+        <button type="button" id="14" onclick="fourteen()">
+            Locker</button>
+        
+        <button type="button" id="15" onclick="fifteen()">
+            Conditioner</button>
+        
+        <button type="button" id="16" onclick="sixteen()">
+            Suitcase</button>
+        
+        <button type="button" id="17">
+            Dead End</button>
+        
+        <br>
+        
+        <button type="button" id="18">
+            Dead End</button>
+        
+        <button type="button" id="19" onclick="nineteen()">
+            Cardboard</button>
+        
+        <button type="button" id="20" onclick="twenty()">
+            Yogurt</button>
+        
+        <button type="button" id="22" onclick="twentytwo()">
+            Chair</button>
+        
+        <button type="button" id="23" onclick="twentythree()">
+            Charger</button>
+        
+        <button type="button" id="24" onclick="twentyfour()">
+            Radio</button>
+        
+        <br>
+        
+        <button type="button" id="25" onclick="twentyfive()">
+            Shower</button>
+        
+        <button type="button" id="26" onclick="twentysix()">
+            Cabinet</button>
+        
+        <button type="button" id="27">
+            Dead End</button>
+        
+        <button type="button" id="28" onclick="twentyeight()">
+            Holiday</button>
+        
+        <button type="button" id="29" onclick="twentynine()">
+            Phone</button>
+        
+        <button type="button" id="30" onclick="thirty()">
+            Sugar</button>
+        
+        <button type="button" id="31" onclick="thirtyone()">
+            Salt</button>
+        
+        <button type="button" id="32">
+            Dead End</button>
+        
+        <br>
+        
+        <button type="button" id="33" onclick="thirtythree()">
+            Lipstick</button>
+        
+        <button type="button" id="34" onclick="thirtyfour()">
+            Chapstick</button>
+        
+        <button type="button" id="35" onclick="thirtyfive()">
+            Pool</button>
+        
+        <button type="button" id="36" onclick="thirtysix()">
+            Foil</button>
+        
+        <button type="button" id="37" onclick="thirtyseven()">
+            Pillow</button>
+        
+        <button type="button" id="38" onclick="thirtyeight()">
+            Jacket</button>
+        
+        <button type="button" id="39">
+            Newspaper</button>
+        
+        <button type="button" id="40">
+            Racket</button>
+        
+        <button type="button" id="41" onclick="fortyone()">
+            Refrigerator</button>
+    
+        <button type="button" id="42" onclick="fortytwo()">
+            Pantry</button>
+        
+        <br>
+        
+        <button type="button" id="43">
+            Dead End</button>
+        
+        <button type="button" id="44">
+            Dead End</button>
+        
+        <button type="button" id="45">
+            Dead End</button>
+        
+        <button type="button" id="46">
+            Dead End</button>
+        
+        <button type="button" id="47">
+            Dead End</button>
+        
+        <button type="button" id="48">
+            FINISH!!!</button>
+        
+        <button type="button" id="49">
+            Dead End</button>
+        
+        <button type="button" id="50">
+            Dead End</button>
+
+    </div>
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
