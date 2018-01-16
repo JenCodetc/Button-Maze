@@ -4,6 +4,7 @@
 <head>
     <title>Button Maze</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
     <style>
         html{
             font-family: 'Roboto', sans-serif;
@@ -13,12 +14,13 @@
         div.center {
             margin: 15vw;
             margin: 15vh;
-            margin-left: 30vw;
+            margin-left: 25vw;
             margin-right: 20vw;
         }
         
         h1{
-            font-size: 8vh;
+            font-size: 9vh;
+            font-family: 'Megrim', cursive;
         }
         
         button {
@@ -29,18 +31,21 @@
             font-size: 3vh;
             height: 5vh;
             padding: 10px;
-            padding-bottom: 30px;
+            padding-bottom: 38px;
             
-            background-color: #ddd; 
+            background-color: rgba(255, 255, 255, 0.3); 
             color: black; 
             border: 2px solid lightslategray;
 
             cursor: pointer;
+            position: relative;
+            top: 50%;
+            border: 1px solid black;
         }
         
-        .button:hover {
-            background-color: #b2bef7;
-            color: white;
+        button:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+/*            color: white;*/
         }
         
     </style>
@@ -173,10 +178,8 @@
         <button type="button" id="52" onclick="fiftytwo()">??</button>
         
         <button type="button" id="53" onclick="fiftythree()">???</button>
-<!--
         
         <br>
--->
         
         <button type="button" id="54">Dead End</button>
         
