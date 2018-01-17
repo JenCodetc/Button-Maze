@@ -14,8 +14,9 @@
         div.center {
             margin: 15vw;
             margin: 15vh;
-            margin-left: 25vw;
+            margin-left: 20vw;
             margin-right: 20vw;
+            text-align: center;
         }
         
         h1{
@@ -28,15 +29,14 @@
             margin-top: 3vh;
             margin-top: 2vh;
             border-radius: 2px;
-            font-size: 3vh;
-            height: 5vh;
-            padding: 10px;
-            padding-bottom: 38px;
+            font-size: 2.5vh;
+            height: 4vh;
+            padding: 8px;
+            padding-bottom: 25px;
             
             background-color: rgba(255, 255, 255, 0.3); 
             color: black; 
             border: 2px solid lightslategray;
-
             cursor: pointer;
             position: relative;
             top: 50%;
@@ -45,7 +45,28 @@
         
         button:hover {
             background-color: rgba(255, 255, 255, 0.5);
-/*            color: white;*/
+        }
+        
+        input {
+            margin-top: 3vh;
+            margin-top: 2vh;
+            border-radius: 2px;
+            font-size: 2.5vh;
+            height: 4vh;
+            padding: 8px;
+            padding-bottom: 25px;
+            
+            background-color: rgba(255, 255, 255, 0.3); 
+            color: black; 
+            border: 2px solid lightslategray;
+            cursor: pointer;
+            position: relative;
+            top: 50%;
+            border: 1px solid black;
+        }
+        
+        input:hover{
+            background-color: rgba(255, 255, 255, 0.5);
         }
         
     </style>
@@ -54,10 +75,12 @@
 <body>
     <div class="center">
         <h1 id="title">Welcome!</h1>        
+
+        <p>This is your <span id="displayCount">1</span> try.</p>
         
         <button type="button" style="display:inline-block;" onclick="one()">Start the Maze</button>
         
-        <button type="button" style="display:inline-block;" onclick="reset()">Reset</button>
+        <input type="button" value="Count" id="countButton" onclick="reset()"> 
         
         <br>
 
@@ -190,7 +213,7 @@
 
 
 
-<script src="script.js"></script>
+<script src="/test.js"></script>
 
 
 </body>
