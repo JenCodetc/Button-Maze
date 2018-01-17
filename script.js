@@ -3,9 +3,17 @@ function reset() {
         document.getElementById(i +'').disabled=false;
         document.getElementById(i +'').style.display="none";
     }
-    document.getElementById('1').disabled=false;
 }
 
+var count = 1;
+      var button = document.getElementById("countButton");
+      var display = document.getElementById("displayCount");
+
+      button.onclick = function(){
+        count++;
+        display.innerHTML = count;
+      }
+    
 function one() {
     document.getElementById('2').style.display='inline-block';
     document.getElementById('3').style.display='inline-block';
@@ -317,13 +325,3 @@ function fiftythree() {
 //function fiftyfour() {}
 
 //function fiftyfive() {}
-
-//      var count = 1;
-//      var button = document.getElementById("countButton");
-//      var display = document.getElementById("displayCount");
-//
-//      button.onclick = function(){
-//        count++;
-//        display.innerHTML = count;
-//      }
-
