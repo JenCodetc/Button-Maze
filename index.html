@@ -4,6 +4,7 @@
 <head>
     <title>Button Maze</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
     <style>
         html{
             font-family: 'Roboto', sans-serif;
@@ -13,34 +14,36 @@
         div.center {
             margin: 15vw;
             margin: 15vh;
-            margin-left: 30vw;
+            margin-left: 20vw;
             margin-right: 20vw;
+            text-align: center;
         }
         
         h1{
-            font-size: 8vh;
+            font-size: 9vh;
+            font-family: 'Megrim', cursive;
         }
         
         button {
             display: none;
-            margin-top: 3vh;
-            margin-top: 2vh;
+            margin-top: 1vh;
             border-radius: 2px;
-            font-size: 3vh;
-            height: 5vh;
-            padding: 10px;
-            padding-bottom: 30px;
+            font-size: 2.5vh;
+            height: 4vh;
+            padding: 8px;
+            padding-bottom: 25px;
             
-            background-color: #ddd; 
+            background-color: rgba(255, 255, 255, 0.3); 
             color: black; 
             border: 2px solid lightslategray;
-
             cursor: pointer;
+            position: relative;
+            top: 50%;
+            border: 1px solid black;
         }
         
-        .button:hover {
-            background-color: #b2bef7;
-            color: white;
+        button:hover {
+            background-color: rgba(255, 255, 255, 0.5);
         }
         
     </style>
@@ -49,6 +52,8 @@
 <body>
     <div class="center">
         <h1 id="title">Welcome!</h1>        
+        
+        <p>This is your <span id="displayCount">1</span> try.</p>
         
         <button type="button" style="display:inline-block;" onclick="one()">Start the Maze</button>
         
@@ -173,10 +178,8 @@
         <button type="button" id="52" onclick="fiftytwo()">??</button>
         
         <button type="button" id="53" onclick="fiftythree()">???</button>
-<!--
         
         <br>
--->
         
         <button type="button" id="54">Dead End</button>
         
