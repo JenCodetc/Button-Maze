@@ -4,6 +4,15 @@ function reset() {
         document.getElementById(i +'').style.display="none";
     }
 }
+
+var count = 1;
+      var button = document.getElementById("countButton");
+      var display = document.getElementById("displayCount");
+
+      button.onclick = function(){
+        count++;
+        display.innerHTML = count;
+      }
     
 function one() {
     document.getElementById('2').style.display='inline-block';
@@ -316,12 +325,3 @@ function fiftythree() {
 //function fiftyfour() {}
 
 //function fiftyfive() {}
-
-    var count = 1;
-      var button = document.getElementById("countButton");
-      var display = document.getElementById("displayCount");
-
-      button.onclick = function(){
-        count++;
-        display.innerHTML = count;
-      }
