@@ -5,14 +5,14 @@ function reset() {
     }
 }
 
-var count = 1;
-      var button = document.getElementById("countButton");
-      var display = document.getElementById("displayCount");
-
-      button.onclick = function(){
-        count++;
-        display.innerHTML = count;
-      }
+//var count = 1;
+//      var button = document.getElementById("countButton");
+//      var display = document.getElementById("displayCount");
+//
+//      button.onclick = function(){
+//        count++;
+//        display.innerHTML = count;
+//      }
     
 function one() {
     document.getElementById('2').style.display='inline-block';
