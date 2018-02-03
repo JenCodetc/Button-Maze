@@ -2,44 +2,38 @@
 <html>
 
 <head>
-    <title>Button Maze</title>
+    <title>Button Maze | Test</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
     <style>
-        html{
+        html {
             font-family: 'Roboto', sans-serif;
             background-color: #b2bef7;
         }
         
         div.center {
-            margin: 15vw;
-            margin: 15vh;
-            margin-left: 20vw;
-            margin-right: 20vw;
+            margin-top: 100px;
+            align-self: center;
             text-align: center;
         }
         
-        h1{
-            font-size: 9vh;
+        h1 {
+            font-size: 75px;
             font-family: 'Megrim', cursive;
         }
         
         button {
             display: none;
-            margin-top: 3vh;
-            margin-top: 2vh;
+            margin-top: 10px;
+            margin-right: 3px;
             border-radius: 2px;
-            font-size: 2.5vh;
-            height: 4vh;
+            font-size: 16.5px;
+            height: 35px;
             padding: 8px;
             padding-bottom: 25px;
-            
-            background-color: rgba(255, 255, 255, 0.3); 
-            color: black; 
-            border: 2px solid lightslategray;
+            background-color: rgba(255, 255, 255, 0.3);
+            color: black;
             cursor: pointer;
-            position: relative;
-            top: 50%;
             border: 1px solid black;
         }
         
@@ -47,173 +41,173 @@
             background-color: rgba(255, 255, 255, 0.5);
         }
         
-        input {
-            margin-top: 3vh;
-            margin-top: 2vh;
+        button:active {
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+        
+        button:disabled {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        
+        button.deadend {
+            display: none;
+            margin-top: 10px;
+            margin-right: 3px;
             border-radius: 2px;
-            font-size: 2.5vh;
-            height: 4vh;
+            font-size: 16.5px;
+            height: 35px;
             padding: 8px;
             padding-bottom: 25px;
-            
-            background-color: rgba(255, 255, 255, 0.3); 
-            color: black; 
-            border: 2px solid lightslategray;
+            background-color: rgba(255, 0, 0, 0.3);
+            color: black;
             cursor: pointer;
-            position: relative;
-            top: 50%;
             border: 1px solid black;
         }
-        
-        input:hover{
-            background-color: rgba(255, 255, 255, 0.5);
-        }
-        
     </style>
 </head>
 
 <body>
     <div class="center">
-        <h1 id="title">Welcome!</h1>        
+        <h1 id="title">Welcome!</h1>
 
-        <p>This is your <span id="displayCount">1</span> try.</p>
-        
+        <div id="result">You have tried the maze -- time(s)</div>
+
         <button type="button" style="display:inline-block;" onclick="one()">Start the Maze</button>
-        
-        <input type="button" value="Count" id="countButton" onclick="reset()"> 
-        
+
+        <button type="button" style="display:inline-block;" onclick="reset()">Reset</button>
+
         <br>
 
         <button type="button" id="2" onclick="two()">Tree</button>
 
         <button type="button" id="3" onclick="three()">Puzzle</button>
-        
+
         <br>
-        
-        <button type="button" id="4">Dead End</button>
+
+        <button type="button" id="4" class="deadend">Dead End</button>
 
         <button type="button" id="5" onclick="five()">Piece</button>
-        
+
         <button type="button" id="6" onclick="six()">Picture</button>
-        
+
         <br>
-        
+
         <button type="button" id="7" onclick="seven()">Cake</button>
-        
+
         <button type="button" id="8" onclick="eight()">Pie</button>
-        
+
         <button type="button" id="9" onclick="nine()">Scenery</button>
-        
+
         <button type="button" id="10" onclick="ten()">Camera</button>
-        
+
         <br>
-        
+
         <button type="button" id="11" onclick="eleven()">Chocolate</button>
-        
+
         <button type="button" id="12" onclick="twelve()">Vanilla</button>
-        
+
         <button type="button" id="13" onclick="thirteen()">Carrot</button>
-        
-        <button type="button" id="14">Dead End</button>
-        
+
+        <button type="button" id="14" class="deadend">Dead End</button>
+
         <button type="button" id="15" onclick="fifteen()">Sunrise</button>
-        
+
         <button type="button" id="16" onclick="sixteen()">Sunset</button>
-        
+
         <button type="button" id="17" onclick="seventeen()">Lens</button>
-        
+
         <button type="button" id="18" onclick="eighteen()">Screen</button>
-        
+
         <button type="button" id="19" onclick="nineteen()">Flash</button>
-        
+
         <br>
-        
+
         <button type="button" id="20" onclick="twenty()">Fudge</button>
-        
+
         <button type="button" id="21" onclick="twentyone()">Candy</button>
-        
+
         <button type="button" id="22" onclick="twentytwo()">Bean</button>
-        
-        <button type="button" id="23">Dead End</button>
-        
+
+        <button type="button" id="23" class="deadend">Dead End</button>
+
         <button type="button" id="24" onclick="twentyfour()">Horizon</button>
-        
+
         <button type="button" id="25" onclick="twentyfive()">Morning</button>
-        
-        <button type="button" id="26">Dead End</button>
-        
+
+        <button type="button" id="26" class="deadend">Dead End</button>
+
         <button type="button" id="27" onclick="twentyseven()">Eye</button>
-        
+
         <button type="button" id="28" onclick="twentyeight()">Transparency</button>
-        
-        <button type="button" id="29">Dead End</button>
-        
-        <button type="button" id="30">Dead End</button>
-        
+
+        <button type="button" id="29" class="deadend">Dead End</button>
+
+        <button type="button" id="30" class="deadend">Dead End</button>
+
         <br>
-        
+
         <button type="button" id="31" onclick="thirtyone()">Sugar</button>
-        
+
         <button type="button" id="32" onclick="thirtytwo()">Salt</button>
-        
-        <button type="button" id="33">Dead End</button>
-        
+
+        <button type="button" id="33" class="deadend">Dead End</button>
+
         <button type="button" id="34" onclick="thirtyfour()">Chickpeas</button>
-        
+
         <button type="button" id="35" onclick="thirtyfive()">Pinto</button>
-        
-        <button type="button" id="36">Dead End</button>
-        
+
+        <button type="button" id="36" class="deadend">Dead End</button>
+
         <button type="button" id="37" onclick="thirtyseven()">Breakfast</button>
-        
+
         <button type="button" id="38" onclick="thirtyeight()">Shower</button>
-        
+
         <button type="button" id="39" onclick="thirtynine()">Face</button>
-        
+
         <button type="button" id="40" onclick="forty()">Body</button>
-        
-        <button type="button" id="41">Dead End</button>
-    
+
+        <button type="button" id="41" class="deadend">Dead End</button>
+
         <br>
-        
+
         <button type="button" id="42" onclick="fortytwo()">Vegetable</button>
-        
+
         <button type="button" id="43" onclick="fortythree()">Fruit</button>
-        
-        <button type="button" id="44">Dead End</button>
-        
-        <button type="button" id="45">Dead End</button>
-        
+
+        <button type="button" id="44" class="deadend">Dead End</button>
+
+        <button type="button" id="45" class="deadend">Dead End</button>
+
         <button type="button" id="46" onclick="fortysix()">Taco</button>
-        
+
         <button type="button" id="47" onclick="fortyseven()">Health</button>
-        
+
         <button type="button" id="48" onclick="fortyeight()">Shampoo</button>
-        
+
         <button type="button" id="49" onclick="fortynine()">Conditioner</button>
-        
+
         <br>
-        
-        <button type="button" id="50">Dead End</button>
-        
+
+        <button type="button" id="50" class="deadend">Dead End</button>
+
         <button type="button" id="51" onclick="fiftyone()">?</button>
-        
+
         <button type="button" id="52" onclick="fiftytwo()">??</button>
-        
+
         <button type="button" id="53" onclick="fiftythree()">???</button>
-        
+
         <br>
-        
-        <button type="button" id="54">Dead End</button>
-        
-        <button type="button" id="55">Dead End</button>
+
+        <button type="button" id="54" class="deadend">Dead End</button>
+
+        <button type="button" id="55" class="deadend">Dead End</button>
 
     </div>
 
 
 
 
-<script src="/test.js"></script>
+    <script src="script.js"></script>
 
 
 </body>
