@@ -20,6 +20,7 @@
         h1 {
             font-size: 75px;
             font-family: 'Megrim', cursive;
+            cursor: default;
         }
         
         button {
@@ -47,6 +48,7 @@
         
         button:disabled {
             background-color: rgba(0, 0, 0, 0.2);
+            cursor: default;
         }
         
         button.deadend {
@@ -70,7 +72,7 @@
     <div class="center">
         <h1 id="title">Welcome!</h1>
 
-        <div id="result">You have tried the maze -- time(s)</div>
+        <div id="result" style="cursor: default;">You have tried the maze -- time(s)</div>
 
         <button type="button" style="display:inline-block;" onclick="one()">Start the Maze</button>
 
