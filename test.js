@@ -4,17 +4,14 @@ function reset() {
         document.getElementById(i + '').style.display = "none";
     }
 
-    if (typeof (Storage) !== "undefined") {
-        if (localStorage.clickcount) {
-            localStorage.clickcount = Number(localStorage.clickcount) + 1;
-        } else {
-            localStorage.clickcount = 1;
-        }
-        document.getElementById("result").innerHTML = "You have tried the maze " + localStorage.clickcount + " time(s).";
-    } else {
-        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
-    }
+    var button = document.getElementById('clickme'),
+  count = 0;
+button.onclick = function() {
+  count += 1;
+  button.innerHTML = "You have tried this maze " + count + " time(s).";
+};
 }
+
 
 function one() {
     document.getElementById('2').style.display = 'inline-block';
