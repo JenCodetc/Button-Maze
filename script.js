@@ -261,6 +261,7 @@ function fortythree() {
     document.getElementById('53').style.display = 'inline-block';
 
     document.getElementById('42').disabled = true;
+    document.getElementById('46').disabled = true;
 }
 
 //function fortyfour() {}
