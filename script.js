@@ -3,22 +3,18 @@ function reset() {
         document.getElementById(i + '').disabled = false;
         document.getElementById(i + '').style.display = "none";
     }
-
-    if (typeof (Storage) !== "undefined") {
-        if (localStorage.clickcount) {
-            localStorage.clickcount = Number(localStorage.clickcount) + 1;
-        } else {
-            localStorage.clickcount = 1;
-        }
-        document.getElementById("result").innerHTML = "You have tried the maze " + localStorage.clickcount + " time(s).";
-    } else {
-        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
-    }
 }
+
+    var clicks = 0;
+    function counter() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = "You have tried this maze " + clicks + " time(s).";
+    };
 
 function one() {
     document.getElementById('2').style.display = 'inline-block';
     document.getElementById('3').style.display = 'inline-block';
+    
 }
 
 function two() {
